@@ -1,0 +1,299 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Menu Styles */
+nav {
+  position: fixed; /* Makes the navigation stay fixed on top when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;  /* Full width across the page */
+  background-color: royalblue; /* Initial background color */
+  padding: 15px 0; /* Padding for menu */
+  transition: background-color 0.3s ease;  /* Smooth transition for color change */
+  z-index: 1000; /* Ensures nav is above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+nav ul {
+  list-style: none;  /* Removes the default bullet points */
+  text-align: center;  /* Center the menu items */
+}
+
+nav ul li {
+  display: inline-block; /* Makes each item sit inline */
+  margin: 0 20px; /* Adds space between menu items */
+}
+
+nav ul li a {
+  text-decoration: none;  /* Removes underline from links */
+  color: white; /* Default text color */
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+
+/* Hover effect for menu items */
+nav ul li a:hover {
+  color: blue; /* Changes text color on hover */
+  background-color: white; /* Changes background color of the link on hover */
+  border-radius: 5px; /* Adds rounded corners to the background */
+}
+
+/* Change the nav background color on scroll */
+.scrolled {
+  background-color: navy; /* Darker background when scrolled */
+ 
+}
+
+
+section {
+  padding: 100px;
+  min-height: 100vh; /* Each section takes full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-wrapper {
+  max-width: 800px;
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+
+
+
+#home h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: royalblue
+}
+
+#home p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cta-button {
+  background-color: royalblue;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6bd1c;
+}
+
+
+#about { 
+  font-weight: bold;
+  background-color: #e4e4e4;
+
+}
+
+#about h2 {
+  color: royalblue;
+}
+
+#about p {
+  font-style: italic;
+}
+
+#about h2, #services h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#services { 
+  background-color:  #d4d4d4; 
+}
+
+#services h2 {
+  color: royalblue;
+}
+
+.card p {
+  font-style: italic;
+}
+
+#services .service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.service-cards .card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.service-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.service-cards .card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#contact { background-color: #c4c4c4; }
+
+#contact h2 {
+  color: royalblue;
+  font-size: 2.5em;
+}
+
+#contact p {
+  font-style: italic;
+  color: black;
+
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #555;
+}
+
+#contact p {
+  margin-bottom: 20px;
+}
+
+
+/* Mobile Responsiveness for Smaller Screens (600px and below) */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column; /* Stack menu items vertically */
+      padding: 20px 0;
+  }
+
+  nav ul li {
+      margin: 10px 0; /* More spacing between menu items */
+  }
+
+  #home h1 {
+      font-size: 1.8em; /* Reduce heading size */
+  }
+
+  #home p {
+      font-size: 1em; /* Adjust paragraph font size */
+  }
+
+  .content-wrapper {
+      padding: 0 10px; /* Add padding for smaller screens */
+  }
+
+  .service-cards {
+      flex-direction: column; /* Stack service cards vertically */
+      align-items: center;
+  }
+
+  .service-cards .card {
+      width: 90%; /* Each card takes up most of the screen */
+  }
+
+  #contact form {
+      width: 100%; /* Form spans the full width */
+  }
+
+  #contact form input, #contact form textarea {
+      width: calc(100% - 20px); /* Slight padding adjustment */
+  }
+
+  .cta-button {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 1em;    /* Adjust font size */
+  }
+}
+
+
+/* Medium Screen Responsiveness (between 600px and 992px) */
+@media (min-width: 600px) and (max-width: 992px) {
+    nav ul {
+        justify-content: space-around; /* Spread out menu items */
+        padding: 15px 0;
+    }
+
+    #home h1 {
+        font-size: 2.5em; /* Adjust heading size for medium screens */
+    }
+
+    #home p {
+        font-size: 1.1em; /* Adjust paragraph font size */
+    }
+
+    .content-wrapper {
+        padding: 0 20px; /* Add some padding on medium screens */
+    }
+
+    .service-cards {
+        flex-direction: row; /* Maintain row layout */
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; /* Center the cards */
+    }
+
+    .service-cards .card {
+        width: 45%; /* Cards take up 45% of the container on medium screens */
+    }
+
+    #contact form {
+        width: 80%; /* Adjust form width for medium screens */
+    }
+
+    #contact form input, #contact form textarea {
+        width: calc(100% - 20px); /* Adjust form input sizes */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 1em;    /* Adjust font size */
+    }
+}
