@@ -212,11 +212,11 @@ section {
 @media (max-width: 600px) {
   nav ul {
       flex-direction: column; /* Stack menu items vertically */
-      padding: 20px 0;
+      padding: 10px 0;
   }
 
   nav ul li {
-      margin: 10px 0; /* More spacing between menu items */
+      margin: 5px 0; /* More spacing between menu items */
   }
 
   #home h1 {
@@ -246,16 +246,31 @@ section {
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   #contact form input, #contact form textarea {
-      width: calc(100% - 20px); /* Slight padding adjustment */
+      width: 100%; /* Slight padding adjustment */
+      text-align: center;
+      align-items: center;
   }
 
   .cta-button {
       padding: 8px 16px; /* Adjust button padding */
       font-size: 1em;    /* Adjust font size */
   }
+
+  #contact form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
 }
 
 
@@ -294,6 +309,8 @@ section {
       flex-direction: column;
       gap: 10px;
       width: 100%;
+      align-items: center;
+
     }
 
     #contact form input, #contact form textarea {
@@ -305,4 +322,6 @@ section {
         padding: 10px 20px; /* Adjust button padding */
         font-size: 1em;    /* Adjust font size */
     }
+
+    
 }
