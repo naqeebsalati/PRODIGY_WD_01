@@ -179,6 +179,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 }
 
 #contact form input,
@@ -237,10 +238,14 @@ section {
 
   .service-cards .card {
       width: 90%; /* Each card takes up most of the screen */
+      text-align: center;
   }
 
   #contact form {
-      width: 100%; /* Form spans the full width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
   }
 
   #contact form input, #contact form textarea {
@@ -285,11 +290,15 @@ section {
     }
 
     #contact form {
-        width: 80%; /* Adjust form width for medium screens */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
     }
 
     #contact form input, #contact form textarea {
         width: calc(100% - 20px); /* Adjust form input sizes */
+        text-align: center;
     }
 
     .cta-button {
