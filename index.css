@@ -215,9 +215,16 @@ section {
       padding: 10px 0;
   }
 
-  nav ul li {
-      margin: 5px 0; /* More spacing between menu items */
+  nav {
+    padding: 2px;
+  
   }
+
+  nav ul li {
+      margin: 2px 0; /* More spacing between menu items */
+   
+  }
+
 
   #home h1 {
       font-size: 1.8em; /* Reduce heading size */
@@ -254,6 +261,11 @@ section {
       width: 100%; /* Slight padding adjustment */
       text-align: center;
       align-items: center;
+  }
+
+
+  section {
+    text-align: center;
   }
 
   .cta-button {
