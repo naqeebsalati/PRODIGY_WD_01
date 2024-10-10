@@ -2,6 +2,7 @@ Landing Page with Interactive Navigation Menu
 
 I created a landing page with an interactive navigation menu that changes color or style when the page is scrolled or when hovering over a menu item. The navigation menu has a fixed position and is visible on all pages, ensuring a consistent user experience. The project is implemented using HTML for structuring the menu, CSS for styling, and JavaScript for adding interactivity.
 
+CHECK OUT THE LIVE SITE: https://naqeebsalati.github.io/PRODIGY_WD_01/
 
 Features
 Fixed Position: The navigation menu remains fixed at the top of the page, providing easy access to all menu items regardless of scrolling.
